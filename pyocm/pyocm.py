@@ -62,7 +62,7 @@ class ocm_api:
 
     def get_account_by_org(self, organization_id):
         return self.__call_api('accounts_mgmt/v1/accounts', 
-                parameters={'search': 'organization_id\'{}\''.format(organization_id)})
+                parameters={'search': 'organization_id=\'{}\''.format(organization_id)})
 
 
     def get_account_by_creator(self, creator_id):
