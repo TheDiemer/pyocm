@@ -32,7 +32,7 @@ class TestOCM(unittest.TestCase):
 
     @unittest.skipUnless(DEBUG, "skipping manuall debugging test")
     def test_account_by_org(self):
-        r = self.ocm.get_org_by_account(ORG_ID)
+        r = self.ocm.get_account_by_org(ORG_ID)
         print(json.dumps(r,sort_keys=True, indent=INDENT))
         self.assertTrue(True)
    
