@@ -54,6 +54,9 @@ class ocm_api:
 
         return r.json()
 
+    def get_current_account(self):
+        return self.__call_api('accounts_mgmt/v1/current_account')
+
 
     def get_org_by_account(self, account_number):
         return self.__call_api('accounts_mgmt/v1/organizations', 
