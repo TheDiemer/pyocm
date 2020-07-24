@@ -21,7 +21,8 @@ class ocm_api:
 
 
     def __del__(self):
-        self.thread_pool.shutdown(wait=True)
+        if self.thread_pool:
+            self.thread_pool.shutdown(wait=True)
 
 
     def __confirm_auth(self, token):
