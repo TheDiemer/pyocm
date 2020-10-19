@@ -1,8 +1,0 @@
-README.md
-setup.py
-pyocm/__init__.py
-pyocm/pyocm.py
-pyocm.egg-info/PKG-INFO
-pyocm.egg-info/SOURCES.txt
-pyocm.egg-info/dependency_links.txt
-pyocm.egg-info/top_level.txt
